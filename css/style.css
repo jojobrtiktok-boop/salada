@@ -423,6 +423,14 @@ section, footer {
   text-align: center;
 }
 .footer .btn-buy { margin-bottom: 16px; }
+.footer-links {
+  margin: 10px 0 0;
+}
+.footer-links a {
+  color: #cfd6b8;
+  font-size: 12px;
+  text-decoration: underline;
+}
 .footer-note {
   color: #cfd6b8;
   font-size: 12px;
