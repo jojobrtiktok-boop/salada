@@ -1,3 +1,14 @@
+// Video preview (click to load YouTube embed)
+(function () {
+  var card = document.getElementById('videoCard');
+  if (!card) return;
+  card.addEventListener('click', function () {
+    var id = card.getAttribute('data-yt-id');
+    card.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
+      '?autoplay=1&rel=0" title="Aula 1 - Tutorial das Camadas" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  }, { once: true });
+})();
+
 // FAQ accordion
 document.querySelectorAll('.faq-item').forEach(function (item) {
   var q = item.querySelector('.faq-q');
